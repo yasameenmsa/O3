@@ -25,6 +25,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* Style the logo image */
 .logo img {
@@ -242,6 +245,8 @@ nav {
   max-width: 100%;
   margin: 0 auto;
 }
+
+
 .about-us-content h2 {
 padding-bottom: 10px;
 }
@@ -275,74 +280,77 @@ padding-bottom: 10px;
   margin-bottom: 20px;
 }
 /* Features Section */
-
-/* Style the features section */
-.features {
-  max-width:1200px; 
-  margin:auto; 
- }
- .features h2 { 
-  text-align:center; 
- }
- .feature { 
-  display:flex; 
-  border-bottom:1px solid #ccc; 
-  padding-top:20px; 
-  padding-bottom:20px; 
- }
- .feature img { 
-  width:200px; 
-  height:auto; 
-  box-shadow:0 2px 4px rgba(0,0,0,0.1); 
- }
- .feature h3,
- .feature p { 
-  margin-left:20px; 
- }
-
-.features {
+.features{
+  background-color: var(--color-1);
+  padding: 35px 0px;
+}
+.content-feature{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px;
-  background-color: var(--color-1);
 }
-
-.features h2 {
-  color: var(--color-4);
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  text-align: center;
-  width: 100%;
-}
-
-.feature {
+@media(max-width:767px){
+  .content-feature{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+  }
+  }
+.list_feature{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
 }
 
-.feature i {
-  color: var(--color-2);
-  font-size: 48px;
+.list_feature li{
+ 
+  list-style: none;
+  margin-left: 20px;
 }
 
-.feature h3 {
-  color: var(--color-4);
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
+
+.list_feature li.icon{
+  color:var(--color-2);
+}
+
+
+.list_feature li.icon i{
+  margin-left: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.content-feature-list .title{
+  color:rgba(0, 0, 0, 0.599)
+}
+.content-feature-list .titles{
+  color:rgba(0, 0, 0, 0.599);
   text-align: center;
-  padding: 5px 5px;
+  margin-top: 5px;
 }
 
-.feature p {
-  color: var(--color-4);
-  font-family: 'Roboto', sans-serif;
-  font-weight: light;
-  font-size: 18px;
-} 
+/* Features Section */
+
+/* Style the features section */
+#careers{
+background-color:rgba(238, 238, 238, 0.527);
+margin-bottom: 30px;
+padding: 20px;
+}
+.careers-content h2{
+  position: relative;
+  margin-bottom: 10px;
+  color:var(--dallas)
+}
+
+
+.careers-content{
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.careers-content p{
+  color: rgb(115, 111, 111);
+}
+
 
 /* Services Section */
 .services {
@@ -350,28 +358,97 @@ padding-bottom: 10px;
   justify-content: space-around;
   align-items: center;
   padding: 50px;
-  background-color: var(--black);
+  background-color:var(--color-2);
 }
 
-.services h2 {
+.services-content h2{
   color: var(--color-1);
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 36px;
   text-align: center;
   width: 100%;
+  text-align: center;
 }
 
-.service {
+
+#services .services-flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  justify-content:space-around ;
+  padding: 30px;
 
+}
+@media(max-width:767px){
+  #services .services-flex{
+    display: flex;
+flex-direction: column;
+  }
+  }
+
+.services-title{
+  width: 50%;
+}
+.services-title .services-title-one{
+  color: rgb(79, 73, 73);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+@media(max-width:767px){
+  .services-title .services-title-one{
+width: 350px;
+color: rgb(79, 73, 73);
+  }
+  }
+
+.services-title .services-title-two{
+  color: rgb(79, 73, 73);
+  font-size: 20px;
+}
+@media(max-width:767px){
+  .services-title .services-title-two{
+width: 350px;
+color: rgb(79, 73, 73);
+  }
+  }
+.services-title ul li{
+  list-style: none;
+  margin-top: 10px;
+
+}
+@media(max-width:767px){
+  .services-title ul li{
+width: 500px;
+padding-top: 10px;
+
+  }
+  }
+
+.services-title ul li i{
+  background-color: var(--color-2);
+  color: white;
+  padding:5px ;
+  margin-right: 7px;
+  border-radius: 7px;
+ 
+}
+@media(max-width:767px){
+  .services-title ul li i{
+margin-right: 10px;
+  }
+  }
+.services-flex .imge-services img{
+width: 400px;
+}
 .service img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.services-flex .imge-services a{
+display: block;
+text-align: center;
+
 }
 
 .service h3 {
@@ -503,12 +580,13 @@ padding-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 18px;
-  transition: all 0.3s ease-in-out;
+ transition: 0.5s linear;
 }
 
 .plan .cta-button:hover {
   transform: scale(1.1);
   background-color: var(--color-4);
+
 }
 
 /* Contact Section */
