@@ -1,0 +1,300 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+}
+
+.container-c {
+    max-width: 1200px;
+    margin: 0 20px;
+    padding: 20px;
+}
+.row-c
+{
+  /* background-color: #f1f1f1; */
+  padding: 0 5%;
+  /* padding-left: none;
+  padding-right: none;  */
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  /* flex-direction: row-reverse; */
+  direction: none;
+  list-style-type: none;
+  } 
+  .row-cMassage
+  {
+
+  }
+
+
+/* Page Title Section */
+.page-title {
+    padding: 50px 0;
+    background-color: #2e3f53;
+    color: #e9dcb9;
+    text-align: center;
+}
+
+.page-title h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    font-size: 18px;
+}
+/* Contact Form Section */
+.contact-form {
+    background-color: #e9dcb9;
+    padding: 50px 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    /* height: 100vh; */
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #bb772e;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #2d1c0b;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #2d1c0b;
+    outline: none;
+}
+
+.form-group-2 textarea {
+    height: 120px;
+}
+
+.btn-default {
+    background-color: #bb772e;
+    color: #e9dcb9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-default:hover {
+    background-color: #817d62;
+}
+
+.contact-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.address-block {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.address-block li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.address-block i {
+    margin-right: 10px;
+    color: #bb772e;
+    font-size: 18px;
+}
+
+.row-c {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-6,
+.col-sm-12 {
+    width: 45%;
+}
+/* Styling for the Contact Box Section */
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 50px; */
+}
+
+.contact-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.address-block {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.address-block li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.address-block i {
+    margin-right: 10px;
+    color: #bb772e;
+    font-size: 18px;
+}
+
+/* Styling for the "Get Directions" Button */
+.btn-default {
+    background-color: #bb772e;
+    color: #e9dcb9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-default:hover {
+    background-color: #817d62;
+}
+
+/* Styling for the Map Image */
+.block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*Contact location box */
+.contact-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #2e3f53;
+    color: #e9dcb9;
+}
+
+.contact-box h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.address-block {
+    list-style: none;
+    padding: 0;
+}
+
+.address-block li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.address-block i {
+    margin-right: 10px;
+    color: #bb772e;
+    font-size: 24px;
+}
+.removecolor{
+    list-style: none;
+    padding: 0;
+    color: #e9dcb9;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-box {
+        padding: 30px 0;
+    }
+
+    .contact-box h2 {
+        font-size: 24px;
+    }
+
+    .address-block li {
+        font-size: 16px;
+    }
+
+    .address-block i {
+        font-size: 20px;
+    }
+}
+.butn-dir{
+    margin-top: 20px;
+}
+/* Footer Section */
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #361517;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.footer-content {
+    font-size: 14px;
+    color: #361517;
+    padding: 5px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .page-title h1 {
+        font-size: 24px;
+    }
+
+    .page-title p {
+        font-size: 16px;
+    }
+
+    .contact-box h2 {
+        font-size: 20px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn-default {
+        font-size: 14px;
+    }
+
+    .address-block li {
+        font-size: 14px;
+    }
+
+    .footer a {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        font-size: 12px;
+    }
+}
